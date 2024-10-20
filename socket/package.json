@@ -1,0 +1,22 @@
+{
+  "name": "live-chat-socket",
+  "version": "1.0.0",
+  "description": "backend for live chat with socket server",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "start": "touch .env && NODE_ENV=production node --env-file=.env dist/index.js",
+    "dev": "NODE_ENV=development tsx watch --clear-screen=false --env-file=.env  src/index.ts"
+  },
+  "author": "antony0101",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.0"
+  }
+}
